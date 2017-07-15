@@ -31,7 +31,3 @@ IE compatibility is not a concern. For a compatibility reference see the link:
 ### Snipacks
 
 `snipacks add unpkg fa.css material-icons-base64`
-
-### Bower
-
-`bower i -S material-icons-base64`
