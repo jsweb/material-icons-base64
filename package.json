@@ -1,0 +1,34 @@
+{
+	"name": "material-icons-base64",
+	"description": "Material Icons compiled with base64 embedded font to CSS instead of link to font files.",
+	"version": "0.0.0",
+	"main": "index.css",
+	"repository": "git@gitlab.com:tecnos/material-icons-base64.git",
+	"author": "Alex Bruno Cáceres <git.alexbr@outlook.com>",
+	"license": "MIT",
+	"keywords": [
+		"icons",
+		"font",
+		"material",
+		"base64"
+	],
+	"devDependencies": {
+		"less": "^2.7.2",
+		"less-plugin-clean-css": "^1.5.1",
+		"snipacks": "^1.1.2"
+	},
+	"scripts": {
+		"start": "lessc --no-ie-compat --clean-css src/index.less index.css",
+		"build": "yarn && snipacks && node src/build.js",
+		"lib": "snipacks"
+	},
+	"snipacks": {
+		"unpkg": {
+			"codepoints.txt": "material-design-icons/iconfont/codepoints",
+			"font.woff": "material-design-icons/iconfont/MaterialIcons-Regular.woff"
+		},
+		"web": {
+			"src.css": "https://fonts.googleapis.com/icon?family=Material+Icons"
+		}
+	}
+}
