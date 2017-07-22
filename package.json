@@ -1,7 +1,7 @@
 {
 	"name": "material-icons-base64",
 	"description": "Material Icons compiled with base64 embedded font to CSS instead of link to font files.",
-	"version": "1.1.3",
+	"version": "1.1.4",
 	"main": "index.css",
 	"repository": "git@gitlab.com:tecnos/material-icons-base64.git",
 	"author": "Alex Bruno Cáceres <git.alexbr@outlook.com>",
