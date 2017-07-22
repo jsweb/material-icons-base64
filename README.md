@@ -4,7 +4,7 @@ Material Icons compiled with base64 embedded font to CSS instead of link to font
 
 ## About
 
-This compilation uses the original files from Google project and a little custom hack with LESS build to replace `@font-face` settings and embed font with `data-uri`.
+This compilation uses original files from Google project and a little custom hack with LESS build to replace `@font-face` settings and embed font with `data-uri`.
 
 Only WOFF fonts are included to minify the compiled CSS at most as possible and because WOFF is basically OTF/TTF with metadata and compression supported by all major browsers.
 
@@ -31,3 +31,9 @@ IE compatibility is not a concern. For a compatibility reference see the link:
 ### Snipacks
 
 `snipacks add unpkg fa.css material-icons-base64`
+
+## Files
+
+If you download the package using NPM or Yarn, you need to use `index.css` file.
+
+It also includes an `index.json` file containing a list of all icons available.
