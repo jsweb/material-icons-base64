@@ -19,7 +19,7 @@
 	},
 	"scripts": {
 		"start": "lessc --no-ie-compat --clean-css src/index.less index.css",
-		"build": "yarn && snipacks && node src/build.js",
+		"build": "yarn upgrade && snipacks && node src/build.js",
 		"lib": "snipacks"
 	},
 	"snipacks": {
