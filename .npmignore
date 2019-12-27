@@ -4,6 +4,7 @@ jsweb-packs
 .prettierrc.json
 .babelrc
 .travis.yml
+rollup.config.js
 
 # Logs
 logs
