@@ -17,16 +17,16 @@ IE compatibility is not a concern. For a compatibility reference see the link:
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/material-icons-base64"/>
+<link rel="stylesheet" href="https://unpkg.com/@jsweb/material-icons-base64"/>
 ```
 
 ### NPM
 
-`npm i -S material-icons-base64`
+`npm i -S @jsweb/material-icons-base64`
 
 ### Yarn
 
-`yarn add material-icons-base64`
+`yarn add @jsweb/material-icons-base64`
 
 ## Files
 
