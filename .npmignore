@@ -4,7 +4,6 @@ jsweb-packs
 .prettierrc.json
 .babelrc
 .travis.yml
-.gitlab-ci.yml
 
 # Logs
 logs
