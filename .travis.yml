@@ -6,6 +6,7 @@ install:
 script:
 - npm run dist
 deploy:
+  edge: true
   provider: npm
   email: git.alexbr@outlook.com
   api_key: $NPM_TOKEN
