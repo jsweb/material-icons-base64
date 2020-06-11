@@ -6,10 +6,10 @@
     "major": "npm version major && npm run push",
     "minor": "npm version minor && npm run push",
     "patch": "npm version patch && npm run push",
-    "prepare": "npm run dist",
+    "prepare": "npm run build",
     "push": "git push && git push --tags",
     "lint": "prettier --write build.js",
-    "build": "run-s dist:*",
+    "build": "run-s build:*",
     "build:packs": "packs",
     "build:lint": "npm run lint",
     "build:css": "babel-node build.js"

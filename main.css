@@ -1,3 +1,11 @@
+/**
+ * @jsweb/material-icons-base64
+ * @version 1.2.0
+ * @desc Material Icons compiled with base64 embedded font to CSS instead of link to font files
+ * @author Alex Bruno Cáceres <git.alexbr@outlook.com>
+ * @create date 2017-07-15 14:50:00
+ * @modify date 2020-06-11T17:52:40.916Z
+ */
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
