@@ -1,10 +1,8 @@
-src
-dist/*.js
 jsweb-packs
 .prettierrc.json
 .babelrc
 .travis.yml
-rollup.config.js
+build.js
 
 # Logs
 logs
