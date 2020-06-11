@@ -1,21 +1,15 @@
-import { readFileSync, writeFileSync } from 'fs'
-import { mkdir } from 'shelljs'
 import { join } from 'path'
+import { readFileSync, writeFileSync } from 'fs'
 import stylus from 'stylus'
 
 const root = process.cwd()
-
-const main = join(root, 'dist', 'main.css')
-
+const main = join(root, 'main.css')
 const styl = join(root, 'jsweb-packs', 'web', 'source.styl')
-
 const source = readFileSync(styl, 'utf8')
 
 const result = source
   .replace('truetype', 'woff2')
   .replace(/https.+.ttf/, 'source.woff2')
-
-mkdir('-p', root, 'dist')
 
 stylus(result)
   .set('filename', styl)

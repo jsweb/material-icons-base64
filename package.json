@@ -3,19 +3,16 @@
   "version": "1.1.12",
   "description": "Material Icons compiled with base64 embedded font to CSS instead of link to font files",
   "scripts": {
-    "clean": "shx rm -rf dist",
     "major": "npm version major && npm run push",
     "minor": "npm version minor && npm run push",
     "patch": "npm version patch && npm run push",
     "prepare": "npm run dist",
     "push": "git push && git push --tags",
-    "lint": "prettier --config .prettierrc.json --write 'src/**/*.js'",
-    "dist": "run-s dist:*",
-    "dist:lint": "npm run lint",
-    "dist:clean": "npm run clean",
-    "dist:packs": "packs",
-    "dist:build": "rollup -c",
-    "dist:css": "node dist/prepare.js"
+    "lint": "prettier --write build.js",
+    "build": "run-s dist:*",
+    "build:packs": "packs",
+    "build:lint": "npm run lint",
+    "build:css": "babel-node build.js"
   },
   "keywords": [
     "icons",
@@ -27,14 +24,15 @@
   "repository": "git@github.com:jsweb/material-icons-base64.git",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
     "@jsweb/packs": "^2.0.9",
-    "husky": "^3.1.0",
+    "husky": "^4.2.5",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.19.1",
-    "rollup": "^1.27.14",
-    "shelljs": "^0.8.3",
+    "prettier": "^2.0.5",
+    "rollup": "^2.15.0",
+    "shelljs": "^0.8.4",
     "shx": "^0.3.2",
     "stylus": "^0.54.7"
   },
@@ -43,12 +41,12 @@
       "pre-commit": "npm run lint && git add ."
     }
   },
-  "main": "dist/main.css",
+  "main": "main.css",
   "@jsweb/packs": {
     "dir": "jsweb-packs",
     "web": {
       "source.styl": "https://fonts.googleapis.com/icon?family=Material+Icons",
-      "source.woff2": "https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
+      "source.woff2": "https://fonts.gstatic.com/s/materialicons/v52/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
     }
   }
 }
