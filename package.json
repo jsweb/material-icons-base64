@@ -1,6 +1,6 @@
 {
   "name": "@jsweb/material-icons-base64",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Material Icons compiled with base64 embedded font to CSS instead of link to font files",
   "scripts": {
     "major": "npm version major && npm run push",
