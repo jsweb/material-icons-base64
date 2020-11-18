@@ -34,7 +34,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build && git add ."
+      "pre-commit": "npm run lint && git add ."
     }
   },
   "main": "main.css",
