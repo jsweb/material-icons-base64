@@ -10,6 +10,7 @@
     "build:commit": "git add . && git commit -m 'Build update'",
     "lint": "prettier --write build.js",
     "push": "git push && git push --tags",
+    "preversion": "npm run build",
     "postversion": "npm run build && npm run push"
   },
   "keywords": [
