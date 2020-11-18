@@ -1,4 +1,4 @@
-# @jsweb/material-icons-base64 ![img](https://travis-ci.com/jsweb/material-icons-base64.svg?branch=master)
+# @jsweb/material-icons-base64 ![NPM Package](https://github.com/jsweb/material-icons-base64/workflows/NPM%20Package/badge.svg)
 
 Material Icons compiled with base64 embedded font to CSS instead of link to font file.
 
