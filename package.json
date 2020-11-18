@@ -9,7 +9,7 @@
     "push": "git push && git push --tags",
     "lint": "prettier --write build.js",
     "build": "run-s build:*",
-    "build:packs": "packs",
+    "build:packs": "packs update",
     "build:lint": "npm run lint",
     "build:css": "babel-node build.js"
   },
@@ -23,14 +23,14 @@
   "repository": "git@github.com:jsweb/material-icons-base64.git",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/node": "^7.10.1",
-    "@babel/preset-env": "^7.10.2",
-    "@jsweb/packs": "^2.0.9",
-    "husky": "^4.2.5",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "@jsweb/packs": "^2.1.2",
+    "husky": "^4.3.0",
+    "less": "^3.12.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.5",
-    "stylus": "^0.54.7"
+    "prettier": "^2.1.2"
   },
   "husky": {
     "hooks": {
@@ -41,8 +41,8 @@
   "@jsweb/packs": {
     "dir": "jsweb-packs",
     "web": {
-      "source.styl": "https://fonts.googleapis.com/icon?family=Material+Icons",
-      "source.woff2": "https://fonts.gstatic.com/s/materialicons/v52/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
+      "source.css": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "source.woff2": "https://fonts.gstatic.com/s/materialicons/v67/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2"
     }
   }
 }
