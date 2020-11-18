@@ -1,7 +1,7 @@
 jsweb-packs
 .prettierrc.json
 .babelrc
-.travis.yml
+.github
 build.js
 
 # Logs
