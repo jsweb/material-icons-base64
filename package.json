@@ -7,12 +7,12 @@
     "build": "run-s build:*",
     "build:lint": "npm run lint",
     "build:packs": "packs update",
-    "build:css": "babel-node build.js",
-    "build:commit": "git add . && git commit -m 'Build update'",
-    "lint": "prettier --write build.js",
+    "build:clean": "rm -rf dist && mkdir dist",
+    "build:css": "babel-node src/build.js",
+    "lint": "prettier --write src/**/*.js",
     "push": "git push && git push --tags",
     "preversion": "npm t",
-    "postversion": "npm t && npm run push"
+    "postversion": "npm run push"
   },
   "keywords": [
     "icons",
