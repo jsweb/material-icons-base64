@@ -8,8 +8,8 @@
     "build:lint": "npm run lint",
     "build:packs": "packs update",
     "build:clean": "rm -rf dist && mkdir dist",
-    "build:css": "babel-node src/build.js",
-    "lint": "prettier --write src/**/*.js",
+    "build:css": "babel-node build.js",
+    "lint": "prettier --write build.js",
     "push": "git push && git push --tags",
     "preversion": "npm t",
     "postversion": "npm run push"
