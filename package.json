@@ -3,15 +3,13 @@
   "version": "1.2.5",
   "description": "Material Icons compiled with base64 embedded font to CSS instead of link to font files",
   "scripts": {
-    "major": "npm version major && npm run push",
-    "minor": "npm version minor && npm run push",
-    "patch": "npm version patch && npm run push",
-    "push": "git push && git push --tags",
-    "lint": "prettier --write build.js",
     "build": "run-s build:*",
     "build:packs": "packs update",
     "build:lint": "npm run lint",
-    "build:css": "babel-node build.js"
+    "build:css": "babel-node build.js",
+    "lint": "prettier --write build.js",
+    "push": "git push && git push --tags",
+    "postversion": "npm run build && npm run push"
   },
   "keywords": [
     "icons",
