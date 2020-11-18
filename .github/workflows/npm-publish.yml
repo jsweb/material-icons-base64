@@ -3,7 +3,9 @@
 
 name: Node.js Package
 
-on: tags
+on:
+  push:
+    tags: v*
 
 jobs:
   publish-npm:
