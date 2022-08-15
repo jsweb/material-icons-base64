@@ -1,6 +1,5 @@
 jsweb-packs
-icons.css
-symbols.css
+*.css
 
 # Logs
 logs

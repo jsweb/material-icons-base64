@@ -35,5 +35,10 @@ async function build(name) {
   return writeFileSync(dest, result)
 }
 
-build('symbols')
+// Icons
 build('icons')
+build('icons-outlined')
+
+// Symbols
+build('symbols')
+build('symbols-rounded')
