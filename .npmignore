@@ -1,8 +1,7 @@
+.github
 jsweb-packs
 .prettierrc.json
-.babelrc
-.github
-build.js
+build.mjs
 
 # Logs
 logs

@@ -1,26 +1,20 @@
 # @jsweb/material-icons-base64 ![NPM Package](https://github.com/jsweb/material-icons-base64/workflows/NPM%20Package/badge.svg)
 
-Material Icons compiled with base64 embedded font to CSS instead of link to font file.
+Material Icons compiled with WOFF2 base64 embedded fonts to CSS instead of link to font files.
 
 ## About
 
-This compilation uses original files from Google and a little custom build hack with LESS to replace `@font-face src url` settings and embed font with `data-uri`.
+This compilation uses original files from Google Fonts and a little magic through a custom build using PostCSS to embed the font file in CSS as base64 string.
 
-Only WOFF2 fonts are included to minify the compiled CSS at most as possible and because WOFF2 is supported by all modern major browsers. The result CSS file is about 125kb, with no compression.
+Only WOFF2 fonts are included to minify the compiled CSS at most as possible, and because WOFF2 is supported by all modern major browsers.
 
-Web projects are the target. Specially PWA with offline capabilities, where request remote Google files to get the icons couldn't work.
+Web projects are the target. Especially mobile web view apps and PWA with offline capabilities, caching the CSS icons lib easily.
 
-IE compatibility is not a concern. For a compatibility reference see the link:
+IE compatibility is not a concern (it is dead, accept it). For a compatibility reference see the link:
 
 [Can I use - WOFF2](http://caniuse.com/#search=woff2)
 
 ## Install
-
-### CDN
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/@jsweb/material-icons-base64" />
-```
 
 ### NPM
 
@@ -30,10 +24,46 @@ IE compatibility is not a concern. For a compatibility reference see the link:
 
 `yarn add @jsweb/material-icons-base64`
 
-## Files
+### PNPM
 
-If you download the package using NPM or Yarn, you need to use `main.css` file, at the root package folder.
+`pnpm add @jsweb/material-icons-base64`
 
-You can see the icons at Material Icons index:
+## Usage
 
-https://material.io/resources/icons/?style=baseline
+This package contains two CSS compilations:
+
+- `icons.css` for Material Icons (169 KB)
+- `symbols.css` for Material Symbols (266 KB)
+
+If you are using a build tool for CSS compilation, just import the file you want in your CSS, like this:
+
+```css
+@import '@jsweb/material-icons-base64/icons.css';
+
+/* or */
+
+@import '@jsweb/material-icons-base64/symbols.css';
+```
+
+If you prefer to link the files from the CDN source, you can do it like this:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@jsweb/material-icons-base64/icons.css"
+/>
+
+<!-- or -->
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@jsweb/material-icons-base64/symbols.css"
+/>
+```
+
+## Icons
+
+You can check the icons at Google Fonts index:
+
+- [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
+- [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols)

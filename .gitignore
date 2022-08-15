@@ -1,5 +1,6 @@
 jsweb-packs
-main.css
+icons.css
+symbols.css
 
 # Logs
 logs
@@ -10,6 +11,9 @@ yarn-error.log*
 
 # Dependency directories
 node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
 # Optional npm cache directory
 .npm
