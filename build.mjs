@@ -9,7 +9,7 @@ const now = new Date().toJSON()
 const inline = url({ url: 'inline' })
 
 async function build(name) {
-  const dest = join(root, `${name}.css`)
+  const dest = join(root, `md-${name}.css`)
   const file = join(root, 'jsweb-packs', 'web', `${name}.css`)
   const source = readFileSync(file, 'utf8')
 

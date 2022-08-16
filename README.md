@@ -30,17 +30,17 @@ IE compatibility is not a concern (it is dead, accept it). For a compatibility r
 
 ## Usage
 
-This package contains two CSS compilations:
+CSS compilations in this package:
 
-- `icons.css` for Material Icons Filled (169 KB)
-- `icons-outlined.css` for Material Icons Outlined (203 KB)
-- `symbols.css` for Material Symbols Oulined (266 KB)
-- `symbols-rounded.css` for Material Symbols Rounded (305 KB)
+- `md-icons.css` for Material Icons Filled (169 KB)
+- `md-icons-outlined.css` for Material Icons Outlined (203 KB)
+- `md-symbols.css` for Material Symbols Oulined (266 KB)
+- `md-symbols-rounded.css` for Material Symbols Rounded (305 KB)
 
 If you are using a build tool for CSS compilation, just import the file you want in your CSS, like this:
 
 ```css
-@import '@jsweb/material-icons-base64/icons.css';
+@import '@jsweb/material-icons-base64/md-icons.css';
 ```
 
 If you prefer to link the files from the CDN source, you can do it like this:
@@ -48,7 +48,7 @@ If you prefer to link the files from the CDN source, you can do it like this:
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@jsweb/material-icons-base64/symbols.css"
+  href="https://unpkg.com/@jsweb/material-icons-base64/md-symbols.css"
 />
 ```
 
