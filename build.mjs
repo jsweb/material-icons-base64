@@ -40,5 +40,5 @@ build('icons')
 build('icons-outlined')
 
 // Symbols
-build('symbols')
+build('symbols-outlined')
 build('symbols-rounded')

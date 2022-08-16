@@ -32,10 +32,10 @@ IE compatibility is not a concern (it is dead, accept it). For a compatibility r
 
 CSS compilations in this package:
 
-- `md-icons.css` for Material Icons Filled (169 KB)
-- `md-icons-outlined.css` for Material Icons Outlined (203 KB)
-- `md-symbols.css` for Material Symbols Oulined (266 KB)
-- `md-symbols-rounded.css` for Material Symbols Rounded (305 KB)
+- `md-icons.css`, class `material-icons`, for Material Icons Filled (169 KB)
+- `md-icons-outlined.css`, class `material-icons-outlined`, for Material Icons Outlined (203 KB)
+- `md-symbols-outlined.css`, class `material-symbols-outlined`, for Material Symbols Oulined (266 KB)
+- `md-symbols-rounded.css`, class `material-symbols-rounded`, for Material Symbols Rounded (305 KB)
 
 If you are using a build tool for CSS compilation, just import the file you want in your CSS, like this:
 
@@ -48,8 +48,15 @@ If you prefer to link the files from the CDN source, you can do it like this:
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@jsweb/material-icons-base64/md-symbols.css"
+  href="https://unpkg.com/@jsweb/material-icons-base64/md-symbols-outlined.css"
 />
+```
+
+So, just code your icon tags like this:
+
+```html
+<span class="material-icons">home</span>
+<span class="material-symbols-outlined">home</span>
 ```
 
 ## Icons
